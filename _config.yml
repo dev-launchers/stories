@@ -57,6 +57,8 @@ plugins:
 
 # Collections group related content 
 collections:
+  board_members:
+    output: true
   students:
     output: true # renders a page for each doc in the collection
   mentors:
