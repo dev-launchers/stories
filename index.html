@@ -1,10 +1,43 @@
 ---
 layout: default
 ---
-<ul class="story-index">
-  {% for mentor in site.mentors %}
-  <li>
-    <a href="{{ mentor.url | relative_url }}">Tales of {{ mentor.name }}
-    </a></li>
-  {% endfor %}
-</ul>
+<h2>
+  Legend of the board
+  <ul class="story-index">
+    {% for board in site.board_members %}
+    <li>
+      <a href="{{ board.url | relative_url }}">{{ board.name }}
+      </a></li>
+    {% endfor %}
+  </ul>
+</h2>
+<h2>
+  Epics of students
+  <ul class="story-index">
+    {% for student in site.students %}
+    <li>
+      <a href="{{ student.url | relative_url }}">{{ student.name }}
+      </a></li>
+    {% endfor %}
+  </ul>
+</h2>
+<h2>
+  Tales from mentors
+  <ul class="story-index">
+    {% for mentor in site.mentors %}
+    <li>
+      <a href="{{ mentor.url | relative_url }}">{{ mentor.name }}
+      </a></li>
+    {% endfor %}
+  </ul>
+</h2>
+<h2>
+  Days of the developers
+  <ul class="story-index">
+    {% for developer in site.developers %}
+    <li>
+      <a href="{{ developer.url | relative_url }}">{{ developer.name }}
+      </a></li>
+    {% endfor %}
+  </ul>
+</h2>
